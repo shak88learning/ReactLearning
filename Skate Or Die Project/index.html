@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -144,7 +148,7 @@
                             <img class="img-fluid imgCenter" src="assets/kickflip.jpg">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <button class="btn btn-lg btnCenter">KickFlip</button>
+                                    <button class="btn btn-lg btnCenter" data-toggle="modal" data-target=".kf-modal-lg">KickFlip</button>
                                 </div>
                             </div>
                         </div>
@@ -152,7 +156,8 @@
                             <img class="img-fluid imgCenter" src="assets/360flip.jpg">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <button class="btn btn-lg btnCenter">360 Flip</button>
+                                    <button class="btn btn-lg btnCenter" data-toggle="modal" data-target=".i360-modal-md">360
+                                        Flip</button>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +165,8 @@
                             <img class="img-fluid imgCenter" src="assets/bscrook.jpg">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <button class="btn btn-lg btnCenter">Backside Crook</button>
+                                    <button class="btn btn-lg btnCenter" data-toggle="modal" data-target=".bs-modal-sm">Backside
+                                        Crook</button>
                                 </div>
                             </div>
                         </div>
@@ -211,7 +217,72 @@
                 </div>
             </div>
         </div>
+
+        <!--kickflip Video Modal-->
+        <div class="modal fade bd-example-modal-lg kf-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/Jeiu7y-a220" frameborder="0" allow="autoplay; encrypted-media"
+                            allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--360flips Video Modal-->
+        <div class="modal fade bd-example-modal-lg i360-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jeiu7y-a220" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--BS crook Video Modal-->
+        <div class="modal fade bd-example-modal-lg bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Jeiu7y-a220" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer class="footer bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                    <img class="img-fluid footerImage" src="assets/KFS_LIGHT.png">
+                </div>
+                <div class="col-sm-12 col-lg-9 socialWrapper">
+                    <a href="https://www.facebook.com">
+                        <i class="fab fa-facebook fa-3x"></i>
+                    </a>
+                    <a href="https://www.google.com">
+                        <i class="fab fa-google fa-3x"></i>
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <i class="fab fa-instagram fa-3x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -219,6 +290,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
     <script src="bootstrap-4.1.3/js/bootstrap.min.js"></script>
+
 
 </body>
 
